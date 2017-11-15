@@ -1,1 +1,2 @@
-The print functor needs to be rechecked.
+This is proof of concept code for tree impl with shared_ptr.
+

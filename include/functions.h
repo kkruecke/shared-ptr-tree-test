@@ -1,8 +1,5 @@
-#include <iostream>
-#include <memory>
-#include <utility>
-#include <queue>
-#include <stack>
+#ifndef functions_h_
+#define functions_h_
 
 #include "include/node.h"
 #include "include/level-order-display.h"
@@ -86,56 +83,4 @@ template<class Key> void print_tree(const std::shared_ptr<Node<Key>>& root_ptr)
   std::cout << std::flush;
 }
 
-/*
- Object for testing trees implemented with shared_ptr's
- */
-
-class Test {
-
-   int i;
-
-  public:
-
-   bool operator <(const Test& lhs) { return i < lhs.i; }
-   bool operator==(const Test& lhs) { return i == lhs.i; }
-
-   Test() : i{0} {}
-   Test(int in) : i{in} {}
-   Test(const Test& ) = default;
-
-   Test(Test&& ) = default;
-
-   Test& operator=(const Test&) = default;
-   Test& operator=(Test&&) = default;
-
-   friend std::ostream& operator<<(std::ostream& ostr, const Test& lhs) 
-   {
-     ostr << "i = " << lhs.i << std::endl; 
-     return ostr;
-   }
-
-  ~Test()
-   {
-     std::cout << "In ~Test() with i = " << i << " and this = " << this << std::endl;
-   }
- 
-};
-
-using namespace std;
-
-int main(int argc, char** argv) 
-{
-    shared_ptr<Node<Test>> root = buildTree(Test(0), Test{1}, Test{2});
-
-    cout << "\nTree built. Print tree:" << endl;
-    
-    print_tree(root);
-   
-    shared_ptr<Node<Test>> root2 = root;
-    
-    cout << "\nroot2 = root done. Printing copied root:" << endl;
-    print_tree(root2);
-   
-    return 0;
-}
-
+#endif

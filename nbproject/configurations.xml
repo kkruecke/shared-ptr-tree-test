@@ -4,6 +4,13 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="include" displayName="include" projectFiles="true">
+        <itemPath>include/level-order-display.h</itemPath>
+        <itemPath>include/node.h</itemPath>
+        <itemPath>include/printer-of-tree-interface.h</itemPath>
+        <itemPath>include/test.h</itemPath>
+        <itemPath>include/tree234.h</itemPath>
+      </logicalFolder>
       <itemPath>List.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -27,6 +34,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>include</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -41,6 +51,19 @@
         </ccTool>
       </compileType>
       <item path="List.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/level-order-display.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/node.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/printer-of-tree-interface.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/test.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/tree234.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -67,6 +90,19 @@
         </asmTool>
       </compileType>
       <item path="List.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/level-order-display.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/node.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/printer-of-tree-interface.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/test.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/tree234.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

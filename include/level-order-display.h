@@ -37,6 +37,7 @@ template<class Key> int levelOrderDisplay<Key>::get_tree_height() const noexcept
     for (const Node<Key> *current = proot; current != nullptr; current = current->leftChild().get()) {
         ++height;
     }
+    return height;
 }
 
 template<class Key>
@@ -102,7 +103,7 @@ void  levelOrderDisplay<Key>::display_node(std::ostream& ostr, const Node<Key>& 
 
     } else {
         
-      ostr << node << ", "; 
+      ostr << node.get_key() << std::endl; 
     }
 }
 #endif

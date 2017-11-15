@@ -1,0 +1,11 @@
+project.xml
+Makefile
+dist/
+docs/
+build/
+nbproject/
+Tree234.java
+*.pdf
+new.txt
+out*.txt
+x
